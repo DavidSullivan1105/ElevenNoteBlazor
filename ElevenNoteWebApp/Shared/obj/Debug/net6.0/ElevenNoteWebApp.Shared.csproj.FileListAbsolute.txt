@@ -1,0 +1,12 @@
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\bin\Debug\net6.0\ElevenNoteWebApp.Shared.deps.json
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\bin\Debug\net6.0\ElevenNoteWebApp.Shared.dll
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\bin\Debug\net6.0\ElevenNoteWebApp.Shared.pdb
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\obj\Debug\net6.0\ElevenNoteWebApp.Shared.csproj.AssemblyReference.cache
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\obj\Debug\net6.0\ElevenNoteWebApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\obj\Debug\net6.0\ElevenNoteWebApp.Shared.AssemblyInfoInputs.cache
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\obj\Debug\net6.0\ElevenNoteWebApp.Shared.AssemblyInfo.cs
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\obj\Debug\net6.0\ElevenNoteWebApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\obj\Debug\net6.0\ElevenNoteWebApp.Shared.dll
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\obj\Debug\net6.0\refint\ElevenNoteWebApp.Shared.dll
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\obj\Debug\net6.0\ElevenNoteWebApp.Shared.pdb
+C:\Users\dcsul\source\repos\ElevenNoteWebApp\ElevenNoteWebApp\Shared\obj\Debug\net6.0\ref\ElevenNoteWebApp.Shared.dll
