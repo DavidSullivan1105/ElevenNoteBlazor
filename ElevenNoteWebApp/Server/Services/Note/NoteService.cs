@@ -1,5 +1,6 @@
 ﻿using DocumentFormat.OpenXml.Bibliography;
 using ElevenNoteWebApp.Server.Data;
+using ElevenNoteWebApp.Server.Models;
 using ElevenNoteWebApp.Shared.Models.Note;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,12 +32,17 @@ namespace ElevenNoteWebApp.Server.Services.Note
             return numberOfChanges == 1;
         }
 
-        public Task<bool> DeleteNoteAsync(int noteId)
+        public async Task<bool> DeleteNoteAsync(int noteId)
         {
-            throw new NotImplementedException();
+            var entity = await _context.Notes.FindAsync(noteId);
+            if (entity?.OwnerId != _userId)
+                return false;
+
+            _context.Notes.Remove(entity);
+            return await _context.SaveChangesAsync() == 1;
         }
 
-        public Task<bool> DeleteNoteAsync(string userId)
+        public async Task<bool> DeleteNoteAsync(string userId)
         {
             throw new NotImplementedException();
         }
@@ -83,9 +89,19 @@ namespace ElevenNoteWebApp.Server.Services.Note
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateNoteAsync(NoteEdit model)
+        public async Task<bool> UpdateNoteAsync(NoteEdit model)
         {
-            throw new NotImplementedException();
+            if (model == null) return false;
+
+            var entity = await _context.Notes.FindAsync(model.Id);
+            if (entity?.OwnerId != _userId) return false;
+
+            entity.Title = model.Title;
+            entity.Content = model.Content;
+            entity.CategoryId = model.CategoryId;
+            entity.ModifiedUtc = DateTimeOffset.Now;
+
+            return await _context.SaveChangesAsync() == 1;
         }
 
         
